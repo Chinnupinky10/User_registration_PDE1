@@ -8,6 +8,7 @@ class UserForm(forms.ModelForm):
         fields=['username','email','password']
         widgets={'password':forms.PasswordInput}
         help_texts={'username':''}
+
 class ProfileForm(forms.ModelForm):
     class Meta:
         model=Profile
